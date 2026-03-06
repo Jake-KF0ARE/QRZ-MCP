@@ -1,0 +1,37 @@
+{
+  "name": "qrz-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for QRZ.com ham radio callsign data",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["mcp", "ham-radio", "qrz", "amateur-radio", "callsign", "model-context-protocol"],
+  "author": "Jakob Larson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jake-KF0ARE/QRZ-MCP.git"
+  },
+  "homepage": "https://github.com/Jake-KF0ARE/QRZ-MCP#readme",
+  "bugs": {
+    "url": "https://github.com/Jake-KF0ARE/QRZ-MCP/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "axios": "^1.13.6",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "@types/xml2js": "^0.4.14",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
